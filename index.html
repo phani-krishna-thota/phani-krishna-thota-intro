@@ -71,19 +71,16 @@ li{font-size:13px;color:var(--muted);margin:5px 0}
 }
   
 .certs img{
-  width:78px;
+  width:78px;                 /* good size without crowding */
   height:78px;
   object-fit:cover;
-
-  clip-path: polygon(
-    50% 2%,
-    86% 22%,
-    86% 78%,
-    50% 98%,
-    14% 78%,
-    14% 22%
-  );
-
+  border-radius:18px;         /* soft rounded container */
+  border:1px solid rgba(255,255,255,.18);
+  background:transparent;
+  box-shadow: 0 10px 22px rgba(0,0,0,.35);
+  /* attempts to remove the white box feel */
+  mix-blend-mode: normal;
+}
   border:1px solid rgba(255,255,255,.18);
   box-shadow: 0 10px 22px rgba(0,0,0,.35);
   background: transparent;
