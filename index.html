@@ -1,103 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Phani Krishna Thota | Senior Java Full Stack Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Senior Java Full Stack Developer | Java 17 | Spring Boot | AWS | Angular | Kafka | Oracle"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root{
+      --bg:#070a14;
+      --card:#0f1730;
+      --text:#e9edff;
+      --muted:#a9b2d3;
+      --accent:#7c5cff;
+      --accent2:#23c4ff;
+      --border: rgba(255,255,255,.08);
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 700px at 18% -10%, rgba(124,92,255,.38), transparent 60%),
+        radial-gradient(900px 600px at 82% 0%, rgba(35,196,255,.25), transparent 55%),
+        linear-gradient(180deg, var(--bg), #04050c 75%);
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px 18px 70px}
+    header{
+      display:flex; justify-content:space-between; align-items:center;
+      position:sticky; top:0; padding:14px 0; backdrop-filter: blur(10px);
+    }
+    .brand{font-weight:800}
+    nav a{color:var(--muted); margin-left:14px; font-size:14px}
+    nav a:hover{color:var(--text)}
+    .hero{
+      margin-top:12px;
+      padding:34px;
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(15,23,48,.75);
+      box-shadow: var(--shadow);
+    }
+    .kicker{color:var(--muted); font-size:14px}
+    h1{margin:8px 0; font-size:42px}
+    .sub{color:var(--muted); max-width:80ch}
+    .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      font-weight:700;
+      font-size:14px;
+    }
+    .btn.primary{
+      border:none;
+      color:#071018;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+    .grid{display:grid; grid-template-columns:1.25fr .75fr; gap:18px; margin-top:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr} h1{font-size:34px}}
+    .card{
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(15,23,48,.75);
+      box-shadow: 0 10px 28px rgba(0,0,0,.35);
+      padding:20px;
+    }
+    .card h2{margin:0 0 10px; font-size:18px}
+    .muted{color:var(--muted)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--border);
+    }
+    .section{margin-top:18px}
+    ul{padding-left:18px}
+    li{margin:6px 0; color:var(--muted)}
+    footer{text-align:center; color:var(--muted); margin-top:26px; font-size:13px}
+  </style>
 </head>
+
 <body>
+<div class="wrap">
 
-  <h1>Phani Krishna Thota</h1>
-  <p><strong>Senior Java Full Stack Developer</strong></p>
-  <p>Java | Spring Boot | AWS | Angular | Kafka | Oracle</p>
+<header>
+  <div class="brand">Phani Krishna Thota</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <p>
-    <a href="https://www.linkedin.com/in/phani-k-606368279">LinkedIn</a> |
-    <a href="https://github.com/phani-krishna-thota">GitHub</a>
+<section class="hero">
+  <p class="kicker">Dallas, TX • Senior Java Full Stack Developer</p>
+  <h1>Building scalable backend systems<br/>and modern full-stack applications</h1>
+  <p class="sub">
+    6+ years of experience delivering enterprise and fintech solutions using
+    Java 8–17, Spring Boot microservices, AWS, Kafka, Oracle, and Angular/React.
   </p>
 
-  <hr/>
+  <div class="cta">
+    <a class="btn primary" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+    <a class="btn" href="https://www.linkedin.com/in/phani-k-606368279" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="btn" href="https://github.com/phani-krishna-thota" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+</section>
 
-  <h2>About Me</h2>
-  <p>
-    Senior Java Full Stack Developer with 6+ years of experience building
-    scalable, high-performance enterprise and fintech applications.
-    I specialize in backend development using Java and Spring Boot,
-    cloud-native solutions on AWS, and modern frontend development
-    with Angular and React.
-  </p>
-  <p>
-    I have hands-on experience working on risk management systems,
-    real-time data processing, microservices architecture, CI/CD pipelines,
-    and production monitoring. I am passionate about writing clean,
-    maintainable code and delivering reliable solutions in Agile environments.
-  </p>
+<div class="grid">
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p class="muted">
+      Senior Java Full Stack Developer with strong backend expertise and hands-on
+      experience building scalable, secure systems. Experienced in risk management,
+      real-time data processing, CI/CD automation, and cloud-native architectures.
+    </p>
+  </section>
 
-  <hr/>
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span class="chip">Java 8–17</span>
+      <span class="chip">Spring Boot</span>
+      <span class="chip">Microservices</span>
+      <span class="chip">Kafka</span>
+      <span class="chip">Oracle / SQL</span>
+      <span class="chip">Angular</span>
+      <span class="chip">React</span>
+      <span class="chip">AWS</span>
+      <span class="chip">Docker</span>
+      <span class="chip">Kubernetes</span>
+      <span class="chip">Jenkins</span>
+      <span class="chip">Splunk</span>
+    </div>
+  </section>
+</div>
 
-  <h2>Technical Skills</h2>
+<section id="experience" class="card section">
+  <h2>Experience</h2>
 
+  <p class="muted"><strong>DTCC</strong> — Java Full Stack Developer (Nov 2023 – Present)</p>
   <ul>
-    <li><strong>Languages:</strong> Java, Python, JavaScript</li>
-    <li><strong>Backend:</strong> Spring Boot, REST APIs, Microservices, Kafka</li>
-    <li><strong>Frontend:</strong> Angular, React, HTML, CSS</li>
-    <li><strong>Databases:</strong> Oracle, MongoDB, Cassandra</li>
-    <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS, EMR, EKS, Redshift),
-        Docker, Kubernetes, Jenkins, GitLab CI/CD</li>
-    <li><strong>Tools:</strong> Splunk, GitHub, Terraform</li>
+    <li>Developed and maintained risk management systems using Java and Spring Boot.</li>
+    <li>Built Angular UI components for risk analytics dashboards.</li>
+    <li>Improved CI/CD pipelines and production monitoring using Jenkins and Splunk.</li>
   </ul>
 
-  <hr/>
-
-  <h2>Professional Experience</h2>
-
-  <h3>DTCC – Java Full Stack Developer (Nov 2023 – Present)</h3>
+  <p class="muted"><strong>Noble Soft Solutions</strong> — Java Developer (Jul 2023 – Nov 2023)</p>
   <ul>
-    <li>Developed and maintained risk management applications for the FICC Risk team using Java and Oracle.</li>
-    <li>Built dynamic Angular UI components to improve data visibility for risk analysts.</li>
-    <li>Designed microservices using Spring Boot and implemented job scheduling with Autosys.</li>
-    <li>Automated CI/CD pipelines with Jenkins and improved SQL performance using Toad.</li>
-    <li>Implemented logging and monitoring using Splunk to improve production observability.</li>
+    <li>Developed backend services and REST APIs.</li>
+    <li>Optimized Oracle SQL queries and supported deployments.</li>
   </ul>
 
-  <h3>Noble Soft Solutions – Java Developer (Jul 2023 – Nov 2023)</h3>
+  <p class="muted"><strong>Zen3 Info Solutions</strong> — Software Engineer (Jan 2019 – Aug 2021)</p>
   <ul>
-    <li>Developed backend services using Java and Spring Boot.</li>
-    <li>Designed RESTful APIs and optimized Oracle SQL queries.</li>
-    <li>Worked with Jenkins and Git to support CI/CD and release workflows.</li>
+    <li>Built real-time processing systems using Java, Spring Boot, and Kafka.</li>
+    <li>Implemented Docker/Kubernetes and improved monitoring with ELK.</li>
   </ul>
+</section>
 
-  <h3>Zen3 Info Solutions – Software Engineer (Jan 2019 – Aug 2021)</h3>
+<section id="projects" class="card section">
+  <h2>Projects (Demo)</h2>
   <ul>
-    <li>Built real-time data processing systems using Java, Spring Boot, and Kafka.</li>
-    <li>Developed microservices and integrated third-party APIs.</li>
-    <li>Implemented Docker and Kubernetes to improve deployment efficiency.</li>
-    <li>Improved monitoring and logging using ELK stack.</li>
+    <li><strong>Risk Management API</strong> – Java, Spring Boot, REST, Oracle</li>
+    <li><strong>Authentication Service</strong> – Spring Security, JWT, OAuth2</li>
+    <li><strong>Real-Time Data Pipeline</strong> – Kafka, Java Microservices</li>
   </ul>
+</section>
 
-  <h3>Tata Consultancy Services – Software Engineer (Jan 2018 – Dec 2018)</h3>
-  <ul>
-    <li>Worked on Linux and Windows server management and automation.</li>
-    <li>Developed Bash and Python scripts to reduce manual operational work.</li>
-    <li>Supported CI/CD pipelines and system monitoring tools.</li>
-  </ul>
-
-  <hr/>
-
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Risk Management API (Demo):</strong> Java, Spring Boot, REST APIs, Oracle</li>
-    <li><strong>Authentication Service:</strong> Spring Security, JWT, OAuth2</li>
-    <li><strong>Real-Time Data Ingestion Pipeline:</strong> Kafka, Java, Microservices</li>
-  </ul>
-
-  <p><em>*All projects are demo implementations and do not contain proprietary data.</em></p>
-
-  <hr/>
-
+<section id="contact" class="card section">
   <h2>Contact</h2>
-  <p>Email: phanikrishnathota432@gmail.com</p>
-  <p>Location: Dallas, TX, United States</p>
+  <p class="muted">Email: <a href="mailto:phanikrishnathota432@gmail.com">phanikrishnathota432@gmail.com</a></p>
+  <p class="muted">Phone: <a href="tel:+14695148672">+1 (469) 514-8672</a></p>
+</section>
+
+<footer>
+  © <span id="y"></span> Phani Krishna Thota • Built with GitHub Pages
+</footer>
+
+</div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
