@@ -1,289 +1,241 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Phani Krishna Thota | Senior Java Full Stack Developer</title>
-  <meta name="description" content="Senior Java Full Stack Developer with 6+ years of experience in Java, Spring Boot, AWS/Azure, Angular, Kafka, Oracle."/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Phani Krishna Thota | Senior Java Full Stack Developer</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <style>
-    :root{
-      --bg:#070a14;
-      --card:#0f1730;
-      --text:#e9edff;
-      --muted:#a9b2d3;
-      --accent:#7c5cff;
-      --accent2:#23c4ff;
-      --border: rgba(255,255,255,.10);
-      --radius: 14px;
-      --max: 1100px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 800px at 15% -10%, rgba(124,92,255,.25), transparent 60%),
-        radial-gradient(900px 600px at 85% 0%, rgba(35,196,255,.18), transparent 55%),
-        linear-gradient(180deg, var(--bg), #04050c 75%);
-      line-height:1.55;
-    }
-    a{color:inherit; text-decoration:none}
-    a:hover{color:var(--accent2)}
-    .wrap{max-width:var(--max); margin:auto; padding:22px 16px 48px}
+<style>
+:root{
+  --bg:#0b1020;
+  --card:#111831;
+  --text:#eef1ff;
+  --muted:#b4bce6;
+  --accent:#6c7cff;
+  --border:rgba(255,255,255,.12);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  background:linear-gradient(180deg,#0b1020,#060912);
+  color:var(--text);
+}
+.wrap{
+  max-width:1050px;
+  margin:auto;
+  padding:24px 18px 40px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:18px;
+  margin-bottom:14px;
+}
+h1{margin:0;font-size:36px}
+h2{margin:0 0 10px;font-size:16px}
+h3{margin:0;font-size:14px}
+p{margin:6px 0;font-size:13px;color:var(--muted)}
+ul{margin:6px 0 0;padding-left:18px}
+li{font-size:13px;color:var(--muted);margin:5px 0}
 
-    header{
-      display:flex; justify-content:space-between; align-items:center;
-      padding:10px 0;
-      font-size:13px;
-      color:var(--muted);
-    }
+.header{
+  position:relative;
+}
+.contact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:6px;
+}
+.contact i{color:var(--accent)}
 
-    .hero{
-      position:relative;
-      padding:22px;
-      border-radius: var(--radius);
-      border:1px solid var(--border);
-      background: rgba(15,23,48,.72);
-      margin-bottom:14px;
-    }
+.certs{
+  position:absolute;
+  top:14px;
+  right:14px;
+  display:flex;
+  gap:10px;
+}
+.certs img{
+  width:60px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:#000;
+}
 
-    .name{
-      font-size:40px;
-      font-weight:900;
-      margin:0;
-    }
-    .title{
-      font-size:14px;
-      font-weight:700;
-      color:var(--accent2);
-      margin:6px 0;
-    }
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.skill{
+  font-size:12px;
+  padding:5px 9px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.05);
+}
 
-    .contact{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      font-size:13px;
-      color:var(--muted);
-      margin-bottom:10px;
-    }
-    .contact i{color:var(--accent); margin-right:5px}
+.job{
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid var(--border);
+}
+.job:first-child{border-top:none}
 
-    .summary{
-      font-size:14px;
-      color:var(--muted);
-      max-width: 95ch;
-    }
-
-    /* Certification badges */
-    .certs{
-      position:absolute;
-      top:16px;
-      right:16px;
-      display:flex;
-      gap:10px;
-    }
-    .certs img{
-      width:62px;
-      border-radius:10px;
-      border:1px solid rgba(255,255,255,.15);
-      background: rgba(0,0,0,.25);
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-      margin-bottom:14px;
-    }
-    @media(max-width:900px){
-      .grid{grid-template-columns:1fr}
-      .certs{position:static; margin-top:10px}
-      .name{font-size:34px}
-    }
-
-    .card{
-      padding:16px;
-      border-radius: var(--radius);
-      border:1px solid var(--border);
-      background: rgba(15,23,48,.70);
-    }
-
-    h2{
-      font-size:15px;
-      margin:0 0 8px;
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:6px;
-    }
-    .chip{
-      font-size:12px;
-      padding:5px 9px;
-      border-radius:999px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.12);
-    }
-
-    ul{padding-left:16px; margin:6px 0}
-    li{font-size:13px; color:var(--muted); margin:5px 0}
-
-    .job{
-      margin-top:10px;
-      padding-top:8px;
-      border-top:1px solid rgba(255,255,255,.08);
-    }
-    .job:first-child{border-top:none}
-    .job-head{
-      display:flex;
-      justify-content:space-between;
-      font-size:13px;
-      font-weight:700;
-    }
-    .job-head span:last-child{
-      font-weight:400;
-      color:var(--muted);
-    }
-
-    footer{
-      text-align:center;
-      font-size:12px;
-      color:var(--muted);
-      margin-top:16px;
-    }
-  </style>
+.job-head{
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  font-weight:700;
+}
+.job-head span:last-child{
+  font-weight:400;
+  color:var(--muted);
+}
+footer{
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+@media(max-width:900px){
+  .certs{position:static;margin-top:10px}
+}
+</style>
 </head>
 
 <body>
 <div class="wrap">
 
-<header>
-  <div>Portfolio</div>
-  <div>One-page resume style</div>
-</header>
-
-<section class="hero">
-  <!-- AWS Certifications -->
+<!-- HEADER -->
+<section class="card header">
   <div class="certs">
     <img src="aws-dev-associate.png" alt="AWS Developer Associate">
     <img src="aws-devops-pro.png" alt="AWS DevOps Professional">
   </div>
 
-  <h1 class="name">Phani Krishna Thota</h1>
-  <div class="title">Senior Java Full Stack Developer</div>
+  <h1>Phani Krishna Thota</h1>
+  <p><strong>Senior Java Full Stack Developer</strong></p>
 
   <div class="contact">
-    <span><i class="fa-solid fa-location-dot"></i>Dallas, TX</span>
-    <span><i class="fa-solid fa-envelope"></i>phanikrishnathota432@gmail.com</span>
-    <span><i class="fa-solid fa-phone"></i>+1 (469) 514-8672</span>
-    <span><i class="fa-brands fa-linkedin"></i>LinkedIn</span>
-    <span><i class="fa-brands fa-github"></i>GitHub</span>
+    <span><i class="fa-solid fa-location-dot"></i> Dallas, TX</span>
+    <span><i class="fa-solid fa-envelope"></i> phanikrishnathota432@gmail.com</span>
+    <span><i class="fa-solid fa-phone"></i> 469-514-8672</span>
+    <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/phani-k-606368279</span>
+    <span><i class="fa-brands fa-github"></i> github.com/phani-krishna-thota</span>
   </div>
 
-  <p class="summary">
-    Senior Java Full Stack Developer with 6+ years of experience building enterprise and fintech applications.
-    Strong expertise in Java, Spring Boot microservices, Oracle, Kafka, Angular/React, and cloud platforms
-    including AWS and Azure. Experienced in CI/CD automation and production monitoring.
+  <p>
+    Senior Java Full Stack Developer with 6+ years of experience building robust, scalable enterprise
+    and fintech applications. Strong expertise in Java, Spring Boot, Oracle, Kafka, Angular/React,
+    AWS, Azure, CI/CD automation, and production monitoring using Splunk and ELK.
   </p>
 </section>
 
-<div class="grid">
-  <section class="card">
-    <h2>Technical Skills</h2>
-    <div class="chips">
-      <span class="chip">Java</span>
-      <span class="chip">Spring Boot</span>
-      <span class="chip">REST APIs</span>
-      <span class="chip">Microservices</span>
-      <span class="chip">Kafka</span>
-      <span class="chip">Oracle</span>
-      <span class="chip">MongoDB</span>
-      <span class="chip">Angular</span>
-      <span class="chip">React</span>
-      <span class="chip">AWS</span>
-      <span class="chip">Azure</span>
-      <span class="chip">Docker</span>
-      <span class="chip">Kubernetes</span>
-      <span class="chip">Jenkins</span>
-      <span class="chip">GitLab CI/CD</span>
-      <span class="chip">Splunk</span>
-      <span class="chip">ELK</span>
-    </div>
-  </section>
+<!-- SKILLS -->
+<section class="card">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span class="skill">Java</span>
+    <span class="skill">Python</span>
+    <span class="skill">Spring Boot</span>
+    <span class="skill">REST APIs</span>
+    <span class="skill">Microservices</span>
+    <span class="skill">Kafka</span>
+    <span class="skill">Oracle</span>
+    <span class="skill">MongoDB</span>
+    <span class="skill">Cassandra</span>
+    <span class="skill">Angular</span>
+    <span class="skill">React</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">AWS</span>
+    <span class="skill">Azure</span>
+    <span class="skill">Docker</span>
+    <span class="skill">Kubernetes</span>
+    <span class="skill">Jenkins</span>
+    <span class="skill">GitLab CI/CD</span>
+    <span class="skill">Terraform</span>
+    <span class="skill">Splunk</span>
+    <span class="skill">ELK</span>
+  </div>
+</section>
 
-  <section class="card">
-    <h2>Key Highlights</h2>
-    <ul>
-      <li>Designed and delivered Spring Boot microservices for risk platforms.</li>
-      <li>Built Kafka-based event-driven services and REST APIs.</li>
-      <li>Automated CI/CD pipelines and improved production observability.</li>
-      <li>Developed Angular UI components for analyst workflows.</li>
-    </ul>
-  </section>
-</div>
-
+<!-- EXPERIENCE -->
 <section class="card">
   <h2>Professional Experience</h2>
 
   <div class="job">
     <div class="job-head">
       <span>DTCC – Java Full Stack Developer</span>
-      <span>Nov 2023 – Present</span>
+      <span>Nov 2023 – Present | Dallas, TX</span>
     </div>
     <ul>
-      <li>Developed risk management services using Java, Spring Boot, and Oracle.</li>
-      <li>Built Angular UI components and REST APIs.</li>
-      <li>Automated CI/CD with Jenkins and improved monitoring using Splunk.</li>
+      <li>Developed and maintained risk management applications for the FICC Risk team using Java and Oracle.</li>
+      <li>Built Angular frontend components improving analyst workflows.</li>
+      <li>Designed Spring Boot microservices and Autosys job scheduling.</li>
+      <li>Automated CI/CD pipelines with Jenkins and optimized Oracle queries using Toad.</li>
+      <li>Used Splunk for log analysis, monitoring, and production troubleshooting.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="job-head">
       <span>Noble Soft Solutions – Java Developer</span>
-      <span>Jul 2023 – Nov 2023</span>
+      <span>Jul 2023 – Nov 2023 | Remote</span>
     </div>
     <ul>
-      <li>Built Java/Spring Boot backend services and REST APIs.</li>
-      <li>Optimized Oracle SQL queries and supported deployments.</li>
+      <li>Developed enterprise backend services using Java and Spring Boot.</li>
+      <li>Designed REST APIs and optimized Oracle SQL performance.</li>
+      <li>Supported CI/CD workflows using Jenkins and Git.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="job-head">
       <span>Zen3 Info Solutions – Software Engineer</span>
-      <span>Jan 2019 – Aug 2021</span>
+      <span>Jan 2019 – Aug 2021 | Hyderabad, India</span>
     </div>
     <ul>
-      <li>Led Kafka-based real-time data processing systems.</li>
-      <li>Implemented microservices, Docker/Kubernetes, and ELK monitoring.</li>
+      <li>Led Kafka-based real-time data processing platforms.</li>
+      <li>Built scalable microservices with REST APIs.</li>
+      <li>Implemented Docker, Kubernetes, and ELK monitoring.</li>
+      <li>Improved system stability through JUnit and Mockito testing.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="job-head">
       <span>Tata Consultancy Services – Software Engineer</span>
-      <span>Jan 2018 – Dec 2018</span>
+      <span>Jan 2018 – Dec 2018 | Hyderabad, India</span>
     </div>
     <ul>
-      <li>Managed Linux/Windows servers and automated tasks using Bash/Python.</li>
-      <li>Implemented monitoring and supported Jenkins deployments.</li>
+      <li>Managed Linux and Windows server environments.</li>
+      <li>Automated tasks using Bash and Python scripts.</li>
+      <li>Implemented monitoring using Nagios and Zabbix.</li>
+      <li>Assisted application deployments via Jenkins CI/CD.</li>
     </ul>
   </div>
 </section>
 
+<!-- EDUCATION -->
+<section class="card">
+  <h2>Education</h2>
+  <p><strong>Master’s in Software Engineering</strong> — University of Houston–Clear Lake, TX</p>
+  <p><strong>Bachelor of Technology</strong> — MIC College of Technology, Kanchikacherla</p>
+</section>
+
 <footer>
-  © <span id="y"></span> Phani Krishna Thota
+  © 2026 Phani Krishna Thota
 </footer>
 
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </div>
 </body>
 </html>
